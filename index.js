@@ -1,8 +1,6 @@
-
-
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = ``;
+appDiv.innerHTML = '';
 
 const claveInput = document.getElementById('clave');
 const valorInput = document.getElementById('valor');
