@@ -30,7 +30,7 @@ const deleteHandler = function () {
 };
 
 const navigateHandler = function () {
-  window.location.href = 'https://js-7py2hs.stackblitz.io';
+  window.location.href = 'https://famous-malabi-d5ae85.netlify.app/';
 };
 
 const getBtn = document.getElementById('get');
