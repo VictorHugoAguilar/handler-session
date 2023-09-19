@@ -6,7 +6,7 @@ const claveInput = document.getElementById('clave');
 const valorInput = document.getElementById('valor');
 const getHandler = function () {
   try {
-    const result = localStorage.getItem(claveInput.value);
+    const result = sessionStorage.getItem(claveInput.value);
     appDiv.innerHTML = `${claveInput.value} vale ${result}`;
   } catch {
     appDiv.innerHTML = `error recuperando ${claveInput.value}`;
@@ -14,7 +14,7 @@ const getHandler = function () {
 };
 const setHandler = function () {
   try {
-    localStorage.setItem(claveInput.value, valorInput.value);
+    sessionStorage.setItem(claveInput.value, valorInput.value);
     appDiv.innerHTML = `${claveInput.value} guardado`;
   } catch {
     appDiv.innerHTML = `error recuperando ${claveInput.value}`;
@@ -22,7 +22,7 @@ const setHandler = function () {
 };
 const deleteHandler = function () {
   try {
-    localStorage.removeItem(claveInput.value);
+    sessionStorage.removeItem(claveInput.value);
     appDiv.innerHTML = `${claveInput.value} borrado`;
   } catch {
     appDiv.innerHTML = `error recuperando ${claveInput.value}`;
